@@ -1,0 +1,63 @@
+body
+    padding-top 20px
+
+pre
+    margin-bottom 20px
+
+#form-container
+    background #2f2f2f
+    margin-bottom 20px
+    border-radius 5px
+    .page-header
+        background #151515
+        margin 0
+        padding 30px
+        border-top-left-radius 5px
+        border-top-right-radius 5px
+
+#status-buttons
+    a
+        color #FFF
+        display inline-block
+        font-size 12px
+        margin-right 10px
+        text-align center
+        text-transform uppercase
+        &:hover
+            text-decoration none
+        &.active
+            span
+                background #00BC8C
+    span
+        background #080808
+        display block
+        height 30px
+        margin 0 auto 10px
+        padding-top 5px
+        width 30px
+        border-radius 50%
+
+#signup-form
+    position relative
+    min-height 300px
+    overflow hidden
+    padding 30px
+
+#form-views.ng-enter,
+#form-views.ng-leave
+    position absolute
+    left 30px
+    right 30px
+    transition .5s all ease
+    -moz-transition .5s all ease
+    -webkit-transition .5s all ease
+
+#form-views
+    &.ng-enter
+        -webkit-animation slideInRight .5s both ease
+        -moz-animation slideInRight .5s both ease
+        animation slideInRight .5s both ease
+    &.ng-leave
+        -webkit-animation slideOutLeft .5s both ease
+        -moz-animation slideOutLeft .5s both ease
+        animation slideOutLeft .5s both ease
